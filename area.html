@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Basic Computations of Circle</title>
+</head>
+
+
+<body>
+    <h1>Find the area and perimeter of a Circle</h1>
+
+    <p>First, I want to develop this only for a circle, then I intend to expand this
+        to all the other shapes.
+    </p>
+
+    <p>Enter the radius of the circle <input type="number" id="radius"></p>
+
+    
+
+    <button onclick = "circleArea()"> Area </button>
+
+    <button onclick = "circlePerimeter()"> Perimeter </button>
+    
+    <p>The result is : <h4 id="result"></h4></p>
+    
+    
+
+
+    <script>
+    
+        
+     function circleArea() {
+         var r = parseFloat(document.getElementById("radius").value);
+         var pi = 3.14
+         var area = pi*r*r;
+         document.getElementById("result").innerHTML = area;
+     }
+
+     function circlePerimeter() {
+        var pi = 3.14
+         var r = parseFloat(document.getElementById("radius").value);
+         var perimeter = 2*pi*r;
+         document.getElementById("result").innerHTML = perimeter;
+     }
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
